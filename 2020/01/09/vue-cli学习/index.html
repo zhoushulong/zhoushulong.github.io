@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>vue-cli学习 - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="vue-cli 学习1.vue-cli 安装
+先确保电脑已经配置 node 环境
+之后通过命令 npm install -g @vue/cli 来安装 vue-cli 到全局配置
+安装之后，可以通过,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">vue-cli学习</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">vue-cli学习</h1>
+        <div class="stuff">
+            <span>一月 09, 2020</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="vue-cli-学习"><a href="#vue-cli-学习" class="headerlink" title="vue-cli 学习"></a>vue-cli 学习</h1><h3 id="1-vue-cli-安装"><a href="#1-vue-cli-安装" class="headerlink" title="1.vue-cli 安装"></a>1.vue-cli 安装</h3><ul>
+<li>先确保电脑已经配置 <code>node</code> 环境</li>
+<li>之后通过命令 <code>npm install -g @vue/cli</code> 来安装 <code>vue-cli</code> 到全局配置</li>
+<li>安装之后，可以通过命令 <code>vue --version</code> 来确定是否成功安装了 <code>vue-cli</code> 并确定版本号  </li>
+</ul>
+<h3 id="创建一个项目"><a href="#创建一个项目" class="headerlink" title="创建一个项目"></a>创建一个项目</h3><ul>
+<li><p><code>cmd</code> 窗口下，通过 <code>cd</code> 命令，找到想要创建项目的文件夹位置 ( 或到文件夹目录下通过 <code>shift + 右键</code> 选择打开 <code>powershell</code> 窗口 )</p>
+</li>
+<li><p>输入命令 <code>vue create &lt;filename&gt;</code>  来生成一个新项目， <code>&lt;filename&gt;</code>为项目名字</p>
+</li>
+<li><p>之后会出现两个选项，<code>default (babel, eslint)</code> 和 <code>Manually select features</code> 其中 <code>default</code> 为默认选中 <code>babel</code> 和 <code>eslint</code> 两个配置；另一个则为自己选择配置</p>
+</li>
+<li><p>如想自己配置，则选中 <code>Manually select feature</code> 按回车，选择想要的配置，按<strong>空格</strong>选中或取消选中，之后，按<strong>回车</strong>进行下一步操作</p>
+</li>
+<li><p>之后，会弹出选项询问把刚刚选中的配置文件放在哪里</p>
+<p>​      <code>In dedicated config files</code> 独立文件放置</p>
+<pre><code>`In package.json` 放入 package.json 文件中</code></pre><p>这里推荐放入 package.json 文件中</p>
+</li>
+<li><p>最后选择是否作为预设，我选择 N，在经过一段时间后，项目创建完成</p>
+</li>
+</ul>
+<h3 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h3><ul>
+<li>在创建完项目后根据提示 <code>cd</code> 到项目目录下</li>
+<li>执行命令 <code>npm run serve</code> 来运行项目到端口上，默认为 8080，如果被占用，则会变为 8081，依次类推</li>
+<li>当开始运行后，通过在端口输入 ip 地址来进行切换到选择的界面 <code>http://localhost:8080/</code> </li>
+<li>此时，可以看到 vue-cli 的主页</li>
+</ul>
+<h3 id="项目目录分析"><a href="#项目目录分析" class="headerlink" title="项目目录分析"></a>项目目录分析</h3><ul>
+<li>在自动生成项目后，你会发现项目中有很多个文件</li>
+<li>其中 <code>README.md</code> 自然就是对 <code>vue-cli</code> 的一些基本介绍</li>
+<li><code>package.json</code> 中则存放了本项目的一些依赖和刚刚选中的基本配置</li>
+<li><code>base.conf.js</code>用于对 ES6 等语法进行处理</li>
+<li><code>gitignore</code> 在上传时告诉 git 哪些是不用上传的</li>
+<li><code>public</code> 中存放的则是公司图标，以及主页</li>
+<li><code>node_modules</code> 中存放的是项目的依赖包</li>
+<li><code>src</code> 是我们开发过程中需要用到的一个文件夹,里面又包含了几个文件及文件夹<ul>
+<li><code>assets</code> 用于存放一些静态的资源，如 js、css、以及图片，都存放在里面</li>
+<li><code>component</code> 中存放我们之后要用的一些组件，其命名方式一般为驼峰命名法，且第一个单词的第一个字母也大写，组件由三部分组成<ul>
+<li>template：类似于 html 但只能有一个主节点，如出现两个或以上，则会报错</li>
+<li>script：用于存放 js 代码</li>
+<li>style：用于存放 css 代码</li>
+</ul>
+</li>
+<li><code>app.vue</code> 为根组件，后续会讲到</li>
+<li><code>main,js</code> 为逻辑入口文件,其中的 #app 对应着 index 的app</li>
+</ul>
+</li>
+</ul>
+<h3 id="组件嵌套"><a href="#组件嵌套" class="headerlink" title="组件嵌套"></a>组件嵌套</h3>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
